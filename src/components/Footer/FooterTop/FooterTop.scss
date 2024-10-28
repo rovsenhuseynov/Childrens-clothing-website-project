@@ -1,0 +1,21 @@
+.footer__top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(0.8vw + 0.4rem);
+  margin-inline: 5vw;
+  // .footer__top-right {
+  // }
+}
+
+@media (width <= 768px) {
+  .footer__top-section {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (768px <= width ) {
+  .ADG {
+    display: none;
+  }
+}
+

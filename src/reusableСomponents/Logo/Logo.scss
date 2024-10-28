@@ -1,0 +1,31 @@
+@import "../../assets/variables.scss";
+
+.header-nav__logo {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: calc(0.5vw + 0.7rem);
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.6));
+
+  cursor: pointer;
+  .header-nav__img {
+    width: calc(3vw + 1.5em);
+    height: calc(3vw + 1.5em);
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 1));
+    &:active {
+      filter: none;
+    }
+  }
+
+  .header-nav__context {
+    color: $activeStateColor;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-shadow: 0 0 4px black;
+    font-family: Northwell-Swash;
+    font-size: $font-size-h5;
+    &:active {
+      text-shadow: none;
+    }
+  }
+}

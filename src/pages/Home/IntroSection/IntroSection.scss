@@ -1,0 +1,30 @@
+@import "../../../assets/variables.scss";
+
+.intro-section {
+  margin-block: calc(2vh + 1em);
+  width: 100%;
+  overflow: hidden;
+
+  @media (width <= 1024px) {
+    margin-block: 0;
+  }
+  @media (orientation: landscape) {
+    margin-block: calc(2vh + 1em);
+  }
+
+  .intro-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+
+    @media (width <= 1024px) {
+      grid-template-columns: 1fr;
+      margin-bottom: calc(1vh + 1em);
+    }
+
+    //применяеься только на экранах устройств, когда ширина экрана не превышает 1024 пикселей, и экран находится в альбомной ориентации.
+    @media only screen and (width <= 1024px) and (orientation: landscape) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.divider {
+  width: auto;
+  height: 1px;
+  background-color: #ffffff;
+  margin-block: calc(1.8vh + .9rem);
+}
+
+@media (1200px <= width) {
+  .divider {
+    display: none; 
+  }
+}
+
+
+@media (orientation: landscape) {
+  .divider {
+    display: none; 
+  }
+}

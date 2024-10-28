@@ -1,0 +1,65 @@
+@import "../../assets/variables.scss";
+
+.button {
+  min-height: 1.5em;
+  display: inline-block;
+  padding: 10px 30px;
+  user-select: none;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  opacity: 0.8;
+  color: $white;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-shadow: rgba(0, 0, 0, 1) 0px 1px 3px;
+  background: #434343;
+  border: 1px solid #242424;
+  border-radius: 4px;
+  font-weight: 400;
+
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px,
+    inset rgba(255, 255, 255, 0.25) 0px 1px 0px,
+    inset rgba(0, 0, 0, 0.25) 0px 0px 0px,
+    inset rgba(255, 255, 255, 0.03) 0px 20px 0px,
+    inset rgba(0, 0, 0, 0.15) 0px -20px 20px,
+    inset rgba(255, 255, 255, 0.05) 0px 20px 20px;
+
+  transition: all 0.1s linear;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.button:active {
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px,
+    inset rgba(255, 255, 255, 0) 0px 1px 0px,
+    inset rgba(0, 0, 0, 0.5) 0px 0px 5px,
+    inset rgba(255, 255, 255, 0.03) 0px 20px 0px,
+    inset rgba(0, 0, 0, 0.15) 0px -20px 20px,
+    inset rgba(255, 255, 255, 0.05) 0px 20px 20px;
+}
+
+.shine {
+  display: block;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  padding: 0px 12px;
+  top: -12px;
+  left: -24px;
+  height: 1px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button.orange {
+  border-radius: 25px / 50%;
+  background: rgb(238, 150, 72);
+  text-wrap: nowrap;
+}

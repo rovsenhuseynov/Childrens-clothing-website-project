@@ -1,0 +1,26 @@
+// Что бы правильно подключить шрифт,следует создать один блок правил для шрифтов (как выше) и указать им путь к файлам шрифта.  А в .scss  компоненте просто прописать название шривта (например) 
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../font//Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "ametist";
+  src: url("../font/Emberly/Emberly.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barcode_font";
+  src: url("../font/Barcode_font/BarcodeFont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Northwell-Swash";
+  src: url("../font/Northwell/Northwell-Alt.ttf") format("truetype");
+}
+
+
+

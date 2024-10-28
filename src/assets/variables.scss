@@ -1,0 +1,72 @@
+/* Переменные шрифтов   ========= */
+
+$font-size-h1: calc(1.8vw + 2.5em);
+$font-size-h2: calc(1.5vw + 2.2em);
+$font-size-h3: calc(1.2vw + 1.9em);
+$font-size-h4: calc(0.9vw + 1.6em);
+$font-size-h5: calc(0.6vw + 1.3em);
+$font-size-h6: calc(0.3vw + 1em);
+
+
+/* Шрифт для титульного названия ================================ */
+
+
+$font-for-card-title: calc(3vw + 1.5em);
+
+/* ================================================================ */
+$p-text: calc(0.6vw + 0.6em);
+$p-fz: calc(0.2vw + 0.6em);
+
+
+/* Переменные цветов  ============================================= */
+
+$swampColor: #50735f;
+$backgroundColor: #f5f5f5;
+$activeStateColor: rgb(238, 150, 72);
+$lightНellow: #ffc66e;
+$white: #fff;
+$black: #000;
+
+
+
+/* Barcode font size  ============================================= */
+
+$Barcode_font: calc(3vw + 1.5em);
+
+
+/* Mixins  ============================================= */
+
+
+
+
+@mixin heading-styles {
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 14px;
+}
+
+@mixin section-title {
+  font-family: ametist;
+  font-weight: 900;
+}
+
+@mixin number-styles {
+  font-family: Northwell-Swash;
+  font-size: $font-size-h4;
+  font-weight: 800;
+  line-height: 0.7;
+}
+
+@mixin text-styles {
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 16px;
+  font-size: $font-size-h6;
+}
+
+@mixin text-description {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+

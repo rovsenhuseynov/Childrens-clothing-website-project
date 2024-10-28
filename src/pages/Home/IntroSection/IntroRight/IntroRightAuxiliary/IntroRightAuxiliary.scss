@@ -1,0 +1,14 @@
+.intro-right__auxiliary {
+  width: 100%;
+
+  @media (width <= 767px  ) {
+    display: none;
+  }
+
+  .intro-right__auxiliary-img {
+    transform: translate(0, -50%) ;
+    aspect-ratio: 0.47/1;
+    width: calc(9vw + 4.5em);
+    z-index: 888;
+  }
+}

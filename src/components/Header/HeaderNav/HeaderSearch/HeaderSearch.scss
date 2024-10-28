@@ -1,0 +1,35 @@
+@import "../../../../assets/variables.scss";
+
+.nav_search_img {
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+ 
+  cursor: pointer; // становится таковым только при неактивном состоянии
+}
+
+.nav-search {
+  padding-inline: calc(1vw + 1.2rem);
+  margin-block: 1vh;
+  color: #fff;
+  .nav-search__input {
+    padding: 4px;
+    font-size: 16px;
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    margin-right: 8px;
+    max-width: 500px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.header__nav-item {
+  .dropdown {
+    padding-block: 1vw;
+  }
+}
+
+.hidden {
+  display: none;
+}

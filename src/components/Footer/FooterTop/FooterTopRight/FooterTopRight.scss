@@ -1,0 +1,23 @@
+.footer__top-right {
+  .top-right__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+
+    .links__customer-care > *:not(:last-child),
+    .links__social > *:not(:last-child),
+    .links__sitemap > *:not(:last-child) {
+      margin-bottom: 1.5vh;
+    }
+  }
+}
+
+@media (width <= 1200px) {
+  .footer__top-right {
+    margin-bottom: 3vh;
+
+    .top-right__links {
+      justify-items: start;
+    }
+  }
+}

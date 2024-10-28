@@ -1,0 +1,56 @@
+@import "../../assets/variables.scss";
+
+.header {
+  background: url(../../assets/img/Header_background/header_background.webp);
+  background-color: $backgroundColor;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 2.0571/1;
+  margin: calc(3vh + 2em) 0;
+  position: relative;
+
+  @media (max-width: 1024px) {
+    aspect-ratio: 1/1.2;
+  }
+
+  @media (max-width: 768px) {
+    aspect-ratio: 2.0571/2.6;
+  }
+
+  @media (orientation: landscape) {
+    height: 95vh;
+    padding-top: 9vh;
+  }
+
+  .card-wrapper {
+    display: grid;
+    align-items: center;
+    margin-inline: 5vw;
+    width: 50%;
+    height: 100%;
+
+    @media (width <= 768px) {
+      width: 80%;
+      height: 100%;
+    }
+  }
+
+  
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (orientation: landscape) {
+      top: 86%;
+      left: 70%;
+    }
+  }
+}
