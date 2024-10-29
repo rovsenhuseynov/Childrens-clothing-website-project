@@ -3,6 +3,7 @@ import IntroSection from "./IntroSection/IntroSection";
 import WhyChooseUs from "./WhyChooseUs/WhyUs";
 import CategoryShowcase from "./CategoryShowcase/CategoryShowcase";
 import СapsuleСollection from "./СapsuleСollection/СapsuleСollection";
+import GetTheLook from "./GetTheLook/GetTheLook";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <WhyChooseUs />
       <CategoryShowcase />
       <СapsuleСollection />
+      <GetTheLook/>
     </div>
   );
 };
