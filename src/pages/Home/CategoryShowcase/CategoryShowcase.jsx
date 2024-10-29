@@ -3,8 +3,6 @@ import "./CategoryShowcase.scss";
 import { NavLink } from "react-router-dom";
 import HeroSlider from "./ShowcaseSlider/ShowcaseSlider";
 
-;
-
 const CategoryShowcase = () => {
   return (
     <section className="category-showcase">
@@ -14,13 +12,13 @@ const CategoryShowcase = () => {
       </div>
 
       <div className="category-showcase__image-slider">
-        <HeroSlider/>
+        <HeroSlider />
       </div>
 
       <div className="category-showcase__links">
         <ul className="category-links">
           <li className="category-link-item">
-            <NavLink to="/ourTeam" >Tops</NavLink>
+            <NavLink to="/ourTeam">Tops</NavLink>
           </li>
           <li className="category-link-item">
             <NavLink href="/bottoms">Bottoms</NavLink>
