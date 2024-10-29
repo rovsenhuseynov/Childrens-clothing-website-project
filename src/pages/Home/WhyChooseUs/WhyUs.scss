@@ -1,0 +1,22 @@
+.why-us {
+  .container {
+    .why-us__content {
+      display: flex;
+      gap: calc(2vw + 1em);
+      @media only screen and (max-width: 1024px) and (orientation: portrait) {
+        gap: 0;
+      }
+      & > div {
+        flex: 1;
+      }
+
+      @media (width <= 1024px) {
+        flex-direction: column;
+
+        & > div {
+          flex: unset;
+        }
+      }
+    }
+  }
+}

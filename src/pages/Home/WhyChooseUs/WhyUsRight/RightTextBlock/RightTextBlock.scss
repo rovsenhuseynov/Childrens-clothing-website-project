@@ -1,0 +1,57 @@
+@import "../../../../../assets/variables.scss";
+
+.why-us__right-text-block {
+  width: 100%;
+  .why-us__right-heading {
+    @include heading-styles;
+  }
+
+  .why-us__right-title-parts {
+    display: flex;
+    flex-direction: column;
+    margin-block: calc(2vh + 1em);
+    @include section-title;
+
+    .why-us__right-title-part {
+      font-size: calc(2.5vw + 1.5em);
+      @media (width <= 768px) {
+        font-size: calc(2.8vw + 1.6em);
+      }
+      @media (orientation: landscape) {
+        font-size: calc(2.3vw + 1.1em);
+        line-height: 0.9;
+      }
+    }
+  }
+
+  .why-us__right-details {
+    display: flex;
+    flex-direction: column;
+    margin-block: calc(2vh + 1em);
+    gap: calc(2vh + 1em);
+    width: 80%;
+    @media (width <= 1024px) {
+      width: 97%;
+    }
+
+    .why-us__right-detail {
+      .why-us__right-detail-title {
+        display: flex;
+        align-items: baseline;
+        gap: calc(-0.5vw + 1.1em);
+        margin-bottom: calc(1vh + 0.5em);
+
+        .why-us__right-detail-title-number {
+          @include number-styles;
+        }
+        .why-us__right-detail-title-text {
+          @include text-styles;
+        }
+      }
+
+      .why-us__right-detail-description {
+        @include text-description;
+      }
+    }
+  }
+}

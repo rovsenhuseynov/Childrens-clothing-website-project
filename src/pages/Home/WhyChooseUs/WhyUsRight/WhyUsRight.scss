@@ -1,0 +1,56 @@
+@import "../../../../assets/variables.scss";
+
+
+.why-us__right {
+  margin-bottom: calc(4vw + 2em);
+  margin-top: calc(5vh);
+  @media only screen and (max-width: 1024px) and (orientation: landscape) {
+    margin-bottom: calc(2vw + 1em);
+  }
+  @media only screen and (max-width: 1024px) {
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+
+  .why-us__right-images {
+    height: 43vw;
+    width: 43vw;
+    position: relative;
+
+    @media (width <= 1024px) {
+      height: 70vw;
+      width: 90vw;
+    }
+
+    @media only screen and (max-width: 1024px) and (orientation: landscape) {
+      height: 45vw;
+      width: auto;
+    }
+
+    .why-us__right-image {
+      position: absolute;
+      z-index: 2;
+      top: 5%;
+      right: 0;
+      height: 95%;
+      box-shadow: 0 0 10px rgb(0, 0, 0);
+
+      @media only screen and (width <= 1024px) and (orientation: portrait) {
+        height: auto;
+        left: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-block: 0;
+      }
+      @media only screen and (max-width: 1024px) and (orientation: landscape) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+
+
