@@ -2,7 +2,6 @@ import React from "react";
 import better_img from "../../../assets/img/baby_shopping_1.png";
 import "./GetTheLook.scss";
 
-
 const GetTheLook = () => {
   return (
     <div className="getTheLook">

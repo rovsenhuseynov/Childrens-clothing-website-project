@@ -1,7 +1,8 @@
 import React from "react";
 import "./CategoryShowcase.scss";
 import { NavLink } from "react-router-dom";
-import HeroSlider from "./ShowcaseSlider/ShowcaseSlider";
+import ShowcaseSlider from "./ShowcaseSlider/ShowcaseSlider";
+
 
 const CategoryShowcase = () => {
   return (
@@ -12,7 +13,7 @@ const CategoryShowcase = () => {
       </div>
 
       <div className="category-showcase__image-slider">
-        <HeroSlider />
+        <ShowcaseSlider/>
       </div>
 
       <div className="category-showcase__links">

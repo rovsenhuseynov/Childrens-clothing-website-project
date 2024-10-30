@@ -12,7 +12,7 @@ const Home = () => {
       <WhyChooseUs />
       <CategoryShowcase />
       <СapsuleСollection />
-      <GetTheLook/>
+      <GetTheLook />
     </div>
   );
 };
