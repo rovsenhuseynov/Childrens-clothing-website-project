@@ -4,7 +4,7 @@ import WhyChooseUs from "./WhyChooseUs/WhyUs";
 import CategoryShowcase from "./CategoryShowcase/CategoryShowcase";
 import СapsuleСollection from "./СapsuleСollection/СapsuleСollection";
 import GetTheLook from "./GetTheLook/GetTheLook";
-import CardSlider from "../../reusableСomponents/SliderComponent/CardSlider";
+import ShopTheLookSlider from "./ShopTheLookSlider/ShopTheLookSlider";
 
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
       <CategoryShowcase />
       <СapsuleСollection />
       <GetTheLook />
-      <CardSlider />
+      <ShopTheLookSlider/>
     </div>
   );
 };
