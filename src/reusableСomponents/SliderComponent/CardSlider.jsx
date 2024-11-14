@@ -1,132 +1,3 @@
-// import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "./CardSlider.scss";
-
-// const CardSlider = ({ slides }) => {
-//   return (
-//     <div className="swiper-container">
-//       <Swiper
-//         modules={[Navigation, Pagination]}
-//         navigation
-//         spaceBetween={10}
-//         slidesPerView={1}
-//         breakpoints={{
-
-
-//           // 768: {
-//           //   slidesPerView: "isLandscape" ? 2 : 2,
-//           // },
-
-//           375: {
-//             slidesPerView: window.innerWidth > window.innerHeight ? 1 : 3, 
-//           },
-
-//           1200: {
-//             slidesPerView: window.innerWidth > window.innerHeight ? 3 : 2, 
-//           },  
-
-  
-
-//         }}
-//         className="swiper-content"
-//       >
-//         {slides.map((slide) => (
-//           <SwiperSlide key={slide.id}>
-//             <div className="swiper__card">
-//               <img
-//                 src={slide.imageUrl}
-//                 alt={`Название ${slide.id}`}
-//                 className="card-img"
-//               />
-//             </div>
-//           </SwiperSlide>
-//         ))}
-//       </Swiper>
-//     </div>
-//   );
-// };
-
-// export default CardSlider;
-
-
-
-
-// import React, { useState, useEffect } from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "./CardSlider.scss";
-
-// const CardSlider = ({ slides }) => {
-//   const getBreakpoints = () => {
-//     const isLandscape = window.matchMedia("(orientation: landscape)").matches;
-//     return {
-//       667: { slidesPerView: isLandscape ? 2 : 1 },
-//       768: { slidesPerView: isLandscape ? 2 : 2 },
-//       1200: { slidesPerView: isLandscape ? 2 : 3 },
-//       1367: { slidesPerView: isLandscape ? 3 : 2 },
-//     };
-//   };
-
-//   const [breakpoints, setBreakpoints] = useState(getBreakpoints());
-
-//   useEffect(() => {
-//     const handleOrientationChange = () => {
-//       setBreakpoints(getBreakpoints());
-//     };
-
-//     // Используем `matchMedia` для отслеживания изменений ориентации
-//     const landscapeMediaQuery = window.matchMedia("(orientation: landscape)");
-//     landscapeMediaQuery.addEventListener("change", handleOrientationChange);
-
-//     // Подписываемся на изменения ширины экрана
-//     window.addEventListener("resize", handleOrientationChange);
-
-//     return () => {
-//       landscapeMediaQuery.removeEventListener("change", handleOrientationChange);
-//       window.removeEventListener("resize", handleOrientationChange);
-//     };
-//   }, []);
-
-//   return (
-//     <div className="swiper-container">
-//       <Swiper
-//         modules={[Navigation, Pagination]}
-//         navigation
-//         spaceBetween={10}
-//         slidesPerView={1} // значение по умолчанию
-//         breakpoints={breakpoints} // передаем `breakpoints` в Swiper
-//         className="swiper-content"
-//       >
-//         {slides.map((slide) => (
-//           <SwiperSlide key={slide.id}>
-//             <div className="swiper__card">
-//               <img
-//                 src={slide.imageUrl}
-//                 alt={`Название ${slide.id}`}
-//                 className="card-img"
-//               />
-//             </div>
-//           </SwiperSlide>
-//         ))}
-//       </Swiper>
-//     </div>
-//   );
-// };
-
-// export default CardSlider;
-
-
-
-
-
-
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -140,9 +11,13 @@ const CardSlider = ({ slides }) => {
     const isLandscape = window.matchMedia("(orientation: landscape)").matches;
     return {
       320: { slidesPerView: isLandscape ? 2 : 1 },
-      678: { slidesPerView: isLandscape ? 2 : 1 },
+      // При ширине экрана от 320 пикселей (но ниже 768 пикселей) будет показано 1 или 2 слайда в зависимости от ориентации
       768: { slidesPerView: isLandscape ? 3 : 2 },
+      // При ширине экрана от 768 пикселей (но ниже 1024 пикселей) будет показано 2 или 3 слайда в зависимости от ориентации
       1024: { slidesPerView: isLandscape ? 2 : 2 },
+      // При ширине экрана от 1024 пикселей (но ниже 1280 пикселей) будет показано 2 слайда независимо от ориентации
+      1280: { slidesPerView: isLandscape ? 3 : 2 },
+      // При ширине экрана от 1280 пикселей и выше будет показано 2 или 3 слайда в зависимости от ориентации
     };
   };
 
@@ -160,7 +35,10 @@ const CardSlider = ({ slides }) => {
     window.addEventListener("resize", handleOrientationChange);
 
     return () => {
-      landscapeMediaQuery.removeEventListener("change", handleOrientationChange);
+      landscapeMediaQuery.removeEventListener(
+        "change",
+        handleOrientationChange
+      );
       window.removeEventListener("resize", handleOrientationChange);
     };
   }, []);
