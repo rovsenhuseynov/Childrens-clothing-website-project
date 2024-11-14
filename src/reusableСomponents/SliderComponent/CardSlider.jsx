@@ -139,10 +139,10 @@ const CardSlider = ({ slides }) => {
   const getBreakpoints = () => {
     const isLandscape = window.matchMedia("(orientation: landscape)").matches;
     return {
-      667: { slidesPerView: isLandscape ? 2 : 1 },
+      320: { slidesPerView: isLandscape ? 2 : 1 },
+      678: { slidesPerView: isLandscape ? 2 : 1 },
       768: { slidesPerView: isLandscape ? 3 : 2 },
       1024: { slidesPerView: isLandscape ? 2 : 2 },
-      // 1366: { slidesPerView: isLandscape ? 3 : 2 },
     };
   };
 
