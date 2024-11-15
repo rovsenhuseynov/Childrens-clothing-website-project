@@ -1,5 +1,54 @@
-.ShopTheLookSlider{
-display: flex;
-justify-content: center;
-align-items: center;
+
+
+
+// 00000000000000000000000000000000000000000000
+
+
+.ShopTheLookSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-image {
+      position: relative;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .card-content {
+      padding: 16px;
+      text-align: center;
+
+      .card-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .card-size,
+      .card-price {
+        font-size: 1rem;
+        margin: 4px 0;
+      }
+
+      .card-price {
+        color: #f32637;
+        font-weight: 700;
+      }
+    }
+  }
 }

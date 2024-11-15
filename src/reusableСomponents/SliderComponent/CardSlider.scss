@@ -78,3 +78,80 @@
   font-size: calc(0.5vw + 1rem);
   font-weight: 600;
 }
+
+
+
+
+//000000000000000000000000000000000
+
+
+
+.swiper__card {
+  position: relative;
+  overflow: hidden;
+
+  .card-img {
+    width: 100%;
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: -100%; // Изначально скрыто за пределами карточки
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); // Затемнение
+    transition: bottom 0.3s ease; // Плавное поднятие
+    z-index: 1; // Перекрывает изображение
+
+    .overlay-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+
+      .overlay-icon {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+      }
+
+      .overlay-title {
+        font-size: 1.2rem;
+        margin: 10px 0;
+      }
+
+      .overlay-description {
+        font-size: 1rem;
+        margin: 10px 0;
+      }
+
+      .overlay-button {
+        padding: 10px 20px;
+        border: none;
+        background: #d12e1f;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+          background: #e55a4e;
+        }
+      }
+    }
+  }
+
+  &:hover .overlay {
+    bottom: 0; // Показать затемнение при наведении
+  }
+}
+
+
+
+
+
+
+
