@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -7,9 +5,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./CardSlider.scss";
+import ProductDetails from "../ProductDetails/ProductDetails";
 
 const CardSlider = ({ slides }) => {
-  const getBreakpoints = () => {
+  const [breakpoints, setBreakpoints] = useState(getBreakpoints());
+  const [swiperKey, setSwiperKey] = useState(0);
+
+  function getBreakpoints() {
     const isLandscape = window.matchMedia("(orientation: landscape)").matches;
     return {
       320: { slidesPerView: isLandscape ? 2 : 1 },
@@ -17,15 +19,12 @@ const CardSlider = ({ slides }) => {
       1024: { slidesPerView: isLandscape ? 2 : 2 },
       1280: { slidesPerView: isLandscape ? 3 : 2 },
     };
-  };
-
-  const [breakpoints, setBreakpoints] = useState(getBreakpoints());
-  const [swiperKey, setSwiperKey] = useState(0);
+  }
 
   useEffect(() => {
     const handleOrientationChange = () => {
       setBreakpoints(getBreakpoints());
-      setSwiperKey((prevKey) => prevKey + 1);
+      setSwiperKey((prevKey) => prevKey + 1); // Перезапускаем Swiper
     };
 
     const landscapeMediaQuery = window.matchMedia("(orientation: landscape)");
@@ -44,7 +43,7 @@ const CardSlider = ({ slides }) => {
   return (
     <div className="swiper-container">
       <Swiper
-        key={swiperKey}
+        key={swiperKey} // Ключ для принудительного обновления Swiper
         modules={[Navigation, Pagination]}
         navigation
         spaceBetween={10}
@@ -52,31 +51,11 @@ const CardSlider = ({ slides }) => {
         breakpoints={breakpoints}
         className="swiper-content"
       >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
+        {slides.map(({ id, imageUrl, title, clothingItems }) => (
+          <SwiperSlide key={id}>
             <div className="swiper__card">
-              <img
-                src={slide.imageUrl}
-                alt={`Название ${slide.id}`}
-                className="card-img"
-              />
-              <div className="overlay">
-                <div className="overlay-content">
-                  <img
-                    src={slide.icon1}
-                    alt="Иконка 1"
-                    className="overlay-icon"
-                  />
-                  <img
-                    src={slide.icon2}
-                    alt="Иконка 2"
-                    className="overlay-icon"
-                  />
-                  <h3 className="overlay-title">{slide.title}</h3>
-                  <p className="overlay-description">{slide.description}</p>
-                  <button className="overlay-button">Купить</button>
-                </div>
-              </div>
+              <img src={imageUrl} alt={`Название ${id}`} className="card-img" />
+              <ProductDetails title={title} clothingItems={clothingItems} />
             </div>
           </SwiperSlide>
         ))}
