@@ -8,38 +8,58 @@ import image7 from "../../../assets/img/ShopTheLookSlider_img/Image_block_7/Img_
 import image8 from "../../../assets/img/ShopTheLookSlider_img/Image_block_8/Img_block_8_500x700_1.jpg";
 import image9 from "../../../assets/img/ShopTheLookSlider_img/Image_block_9/Img_block_9_500x700_1.jpg";
 
-//-----------------------------------------
-
+//----------------------------------------- 1
 import clothingItems1 from "../../../assets/img/ShopTheLookSlider_img/Image_block_1/Img_block_1_600x600x1.png";
 
+import clothingItems1B from "../../../assets/img/ShopTheLookSlider_img/Image_block_1/Img_block_1_600x600x2.png";
+
+//------------------------------------------ 2
 import clothingItems2 from "../../../assets/img/ShopTheLookSlider_img/Image_block_2/Img_block_2_600x600.png";
+import clothingItems2B from "../../../assets/img/ShopTheLookSlider_img/Image_block_2/Img_block_2_600x600x2.png";
 
+//------------------------------------------ 3
 import clothingItems3 from "../../../assets/img/ShopTheLookSlider_img/Image_block_3/Img_block_3_600x600.png";
+import clothingItems3B from "../../../assets/img/ShopTheLookSlider_img/Image_block_3/Img_block_3_600x600x2.png";
 
+//------------------------------------------ 4
 import clothingItems4 from "../../../assets/img/ShopTheLookSlider_img/Image_block_4/Img_block_4_600x600_1.png";
+import clothingItems4B from "../../../assets/img/ShopTheLookSlider_img/Image_block_4/Img_block_4_600x600_1.png";
 
+//------------------------------------------ 5
 import clothingItems5 from "../../../assets/img/ShopTheLookSlider_img/Image_block_5/Img_block_5_600x600x1.png";
+import clothingItems5B from "../../../assets/img/ShopTheLookSlider_img/Image_block_5/Img_block_5_600x600x1.png";
 
+//------------------------------------------ 6
 import clothingItems6 from "../../../assets/img/ShopTheLookSlider_img/Image_block_6/Img_block_6_600x600x1.png";
+import clothingItems6B from "../../../assets/img/ShopTheLookSlider_img/Image_block_6/Img_block_6_600x600x1.png";
 
+//------------------------------------------ 7
 import clothingItems7 from "../../../assets/img/ShopTheLookSlider_img/Image_block_7/Img_block_7_600x600_2.png";
+import clothingItems7B from "../../../assets/img/ShopTheLookSlider_img/Image_block_7/Img_block_7_600x600_2.png";
 
+// ----------------------------------------- 8
 import clothingItems8 from "../../../assets/img/ShopTheLookSlider_img/Image_block_8/Img_block_8_600x600_1.png";
+import clothingItems8B from "../../../assets/img/ShopTheLookSlider_img/Image_block_8/Img_block_8_600x600_1.png";
 
+// ------------------------------------------9
 import clothingItems9 from "../../../assets/img/ShopTheLookSlider_img/Image_block_9/Img_block_9_600x600_1.png";
+import clothingItems9B from "../../../assets/img/ShopTheLookSlider_img/Image_block_9/Img_block_9_600x600_1.png";
 
 const ShopTheLookSliderData = [
   {
     id: 1,
     imageUrl: image1,
-    title: "Платье Летнее",
+    title: "Сарочка для мальчиков",
     size: "M",
     price: "3 499 ₽",
     clothingItems: [
       {
-        imgItems: [clothingItems1], // Массив изображений
+        imgItems: [clothingItems1],
         sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
+      },
+      {
+        imgItems: [clothingItems1B],
+        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -53,7 +73,10 @@ const ShopTheLookSliderData = [
       {
         imgItems: [clothingItems2],
         sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
+      },
+      {
+        imgItems: [clothingItems2B],
+        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -69,6 +92,11 @@ const ShopTheLookSliderData = [
         sizes: ["S", "M", "L"],
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
+      {
+        imgItems: [clothingItems3B],
+        sizes: ["S", "M", "L"],
+        colors: ["#FF0000", "#00FF00", "#0000FF"],
+      },
     ],
   },
   {
@@ -78,6 +106,11 @@ const ShopTheLookSliderData = [
     size: "S",
     price: "2 799 ₽",
     clothingItems: [
+      {
+        imgItems: [clothingItems4],
+        sizes: ["S", "M", "L"],
+        colors: ["#FF0000", "#00FF00", "#0000FF"],
+      },
       {
         imgItems: [clothingItems4],
         sizes: ["S", "M", "L"],
@@ -97,6 +130,11 @@ const ShopTheLookSliderData = [
         sizes: ["S", "M", "L"],
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
+      {
+        imgItems: [clothingItems5],
+        sizes: ["S", "M", "L"],
+        colors: ["#FF0000", "#00FF00", "#0000FF"],
+      },
     ],
   },
   {
@@ -106,6 +144,11 @@ const ShopTheLookSliderData = [
     size: "L",
     price: "5 499 ₽",
     clothingItems: [
+      {
+        imgItems: [clothingItems6],
+        sizes: ["S", "M", "L"],
+        colors: ["#FF0000", "#00FF00", "#0000FF"],
+      },
       {
         imgItems: [clothingItems6],
         sizes: ["S", "M", "L"],
@@ -125,6 +168,11 @@ const ShopTheLookSliderData = [
         sizes: ["S", "M", "L"],
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
+      {
+        imgItems: [clothingItems7],
+        sizes: ["S", "M", "L"],
+        colors: ["#FF0000", "#00FF00", "#0000FF"],
+      },
     ],
   },
   {
@@ -139,6 +187,11 @@ const ShopTheLookSliderData = [
         sizes: ["S", "M", "L"],
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
+      {
+        imgItems: [clothingItems8],
+        sizes: ["S", "M", "L"],
+        colors: ["#FF0000", "#00FF00", "#0000FF"],
+      },
     ],
   },
   {
@@ -148,6 +201,11 @@ const ShopTheLookSliderData = [
     size: "Hg",
     price: "1 49999 ₽",
     clothingItems: [
+      {
+        imgItems: [clothingItems9],
+        sizes: ["S", "M", "L"],
+        colors: ["#FF0000", "#00FF00", "#0000FF"],
+      },
       {
         imgItems: [clothingItems9],
         sizes: ["S", "M", "L"],

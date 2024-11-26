@@ -2,18 +2,18 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./ComponentButton.scss";
 
-const ComponentButton = ({ link, label, color, textColor  }) => {
+const ComponentButton = ({ id, link, label, color, textColor }) => {
   const buttonStyle = {
-    backgroundColor: color || "#ffc66e", 
+    backgroundColor: color || "#ffc66e",
   };
 
   const textStyle = {
-    color: textColor || '#fff',
+    color: textColor || "#fff",
   };
-  
+
   return (
-    <NavLink to={link} className="reusable__component-button">
-      <div className="button orange" style={buttonStyle}>
+    <NavLink to={link} id={id} className="reusable__component-button">
+      <div className="button orange" id="add-to-shop-btn" style={buttonStyle}>
         <div className="shine"></div>
         <p style={textStyle}>{label}</p>
       </div>
