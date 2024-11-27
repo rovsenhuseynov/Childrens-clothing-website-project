@@ -1,49 +1,51 @@
 import image1 from "../../../assets/img/ShopTheLookSlider_img/Image_block_1/Img_block_1_500x700x1.webp";
-import image2 from "../../../assets/img/ShopTheLookSlider_img/Image_block_2/Img_block_2_500x700x1.png";
-import image3 from "../../../assets/img/ShopTheLookSlider_img/Image_block_3/Img_block_3_500x700x1.png";
-import image4 from "../../../assets/img/ShopTheLookSlider_img/Image_block_4/Img_block_4_500x700_1.png";
-import image5 from "../../../assets/img/ShopTheLookSlider_img/Image_block_5/Img_block_5_500x700x1.png";
-import image6 from "../../../assets/img/ShopTheLookSlider_img/Image_block_6/Img_block_6_500x700x1.png";
-import image7 from "../../../assets/img/ShopTheLookSlider_img/Image_block_7/Img_block_7_500x700x1.jpg";
-import image8 from "../../../assets/img/ShopTheLookSlider_img/Image_block_8/Img_block_8_500x700_1.jpg";
-import image9 from "../../../assets/img/ShopTheLookSlider_img/Image_block_9/Img_block_9_500x700_1.jpg";
+
+import image2 from "../../../assets/img/ShopTheLookSlider_img/Image_block_2/Img_block_2_500x700x1.webp";
+
+import image3 from "../../../assets/img/ShopTheLookSlider_img/Image_block_3/Img_block_3_500x700x1.webp";
+import image4 from "../../../assets/img/ShopTheLookSlider_img/Image_block_4/Img_block_4_500x700_1.webp";
+import image5 from "../../../assets/img/ShopTheLookSlider_img/Image_block_5/Img_block_5_500x700x1.webp";
+import image6 from "../../../assets/img/ShopTheLookSlider_img/Image_block_6/Img_block_6_500x700x1.webp";
+import image7 from "../../../assets/img/ShopTheLookSlider_img/Image_block_7/Img_block_7_500x700x1.webp";
+import image8 from "../../../assets/img/ShopTheLookSlider_img/Image_block_8/Img_block_8_500x700_1.webp";
+import image9 from "../../../assets/img/ShopTheLookSlider_img/Image_block_9/Img_block_9_500x700_1.webp";
 
 //----------------------------------------- 1
-import clothingItems1 from "../../../assets/img/ShopTheLookSlider_img/Image_block_1/Img_block_1_600x600x1.png";
+import clothingItems1 from "../../../assets/img/ShopTheLookSlider_img/Image_block_1/Img_block_1_600x600x1.webp";
 
-import clothingItems1B from "../../../assets/img/ShopTheLookSlider_img/Image_block_1/Img_block_1_600x600x2.png";
+import clothingItems1B from "../../../assets/img/ShopTheLookSlider_img/Image_block_1/Img_block_1_600x600x2.webp";
 
 //------------------------------------------ 2
-import clothingItems2 from "../../../assets/img/ShopTheLookSlider_img/Image_block_2/Img_block_2_600x600.png";
-import clothingItems2B from "../../../assets/img/ShopTheLookSlider_img/Image_block_2/Img_block_2_600x600x2.png";
+import clothingItems2 from "../../../assets/img/ShopTheLookSlider_img/Image_block_2/Img_block_2_600x600.webp";
+import clothingItems2B from "../../../assets/img/ShopTheLookSlider_img/Image_block_2/Img_block_2_600x600x2.webp";
 
 //------------------------------------------ 3
-import clothingItems3 from "../../../assets/img/ShopTheLookSlider_img/Image_block_3/Img_block_3_600x600.png";
-import clothingItems3B from "../../../assets/img/ShopTheLookSlider_img/Image_block_3/Img_block_3_600x600x2.png";
+import clothingItems3 from "../../../assets/img/ShopTheLookSlider_img/Image_block_3/Img_block_3_600x600.webp";
+import clothingItems3B from "../../../assets/img/ShopTheLookSlider_img/Image_block_3/Img_block_3_600x600x2.webp";
 
 //------------------------------------------ 4
-import clothingItems4 from "../../../assets/img/ShopTheLookSlider_img/Image_block_4/Img_block_4_600x600_1.png";
-import clothingItems4B from "../../../assets/img/ShopTheLookSlider_img/Image_block_4/Img_block_4_600x600_1.png";
+import clothingItems4 from "../../../assets/img/ShopTheLookSlider_img/Image_block_4/Img_block_4_600x600_1.webp";
+import clothingItems4B from "../../../assets/img/ShopTheLookSlider_img/Image_block_4/Img_block_4_600x600_2.webp";
 
 //------------------------------------------ 5
-import clothingItems5 from "../../../assets/img/ShopTheLookSlider_img/Image_block_5/Img_block_5_600x600x1.png";
-import clothingItems5B from "../../../assets/img/ShopTheLookSlider_img/Image_block_5/Img_block_5_600x600x1.png";
+import clothingItems5 from "../../../assets/img/ShopTheLookSlider_img/Image_block_5/Img_block_5_600x600x1.webp";
+import clothingItems5B from "../../../assets/img/ShopTheLookSlider_img/Image_block_5/Img_block_5_600x600x2.webp";
 
 //------------------------------------------ 6
-import clothingItems6 from "../../../assets/img/ShopTheLookSlider_img/Image_block_6/Img_block_6_600x600x1.png";
-import clothingItems6B from "../../../assets/img/ShopTheLookSlider_img/Image_block_6/Img_block_6_600x600x1.png";
+import clothingItems6 from "../../../assets/img/ShopTheLookSlider_img/Image_block_6/Img_block_6_600x600x1.webp";
+import clothingItems6B from "../../../assets/img/ShopTheLookSlider_img/Image_block_6/Img_block_6_600x600x4.webp";
 
 //------------------------------------------ 7
-import clothingItems7 from "../../../assets/img/ShopTheLookSlider_img/Image_block_7/Img_block_7_600x600_2.png";
-import clothingItems7B from "../../../assets/img/ShopTheLookSlider_img/Image_block_7/Img_block_7_600x600_2.png";
+import clothingItems7 from "../../../assets/img/ShopTheLookSlider_img/Image_block_7/Img_block_7_600x600_1.webp";
+import clothingItems7B from "../../../assets/img/ShopTheLookSlider_img/Image_block_7/Img_block_7_600x600_2.webp";
 
 // ----------------------------------------- 8
-import clothingItems8 from "../../../assets/img/ShopTheLookSlider_img/Image_block_8/Img_block_8_600x600_1.png";
-import clothingItems8B from "../../../assets/img/ShopTheLookSlider_img/Image_block_8/Img_block_8_600x600_1.png";
+import clothingItems8 from "../../../assets/img/ShopTheLookSlider_img/Image_block_8/Img_block_8_600x600_1.webp";
+import clothingItems8B from "../../../assets/img/ShopTheLookSlider_img/Image_block_8/Img_block_8_600x600_2.webp";
 
 // ------------------------------------------9
-import clothingItems9 from "../../../assets/img/ShopTheLookSlider_img/Image_block_9/Img_block_9_600x600_1.png";
-import clothingItems9B from "../../../assets/img/ShopTheLookSlider_img/Image_block_9/Img_block_9_600x600_1.png";
+import clothingItems9 from "../../../assets/img/ShopTheLookSlider_img/Image_block_9/Img_block_9_600x600_1.webp";
+import clothingItems9B from "../../../assets/img/ShopTheLookSlider_img/Image_block_9/Img_block_9_600x600_2.webp";
 
 const ShopTheLookSliderData = [
   {
@@ -112,7 +114,7 @@ const ShopTheLookSliderData = [
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
-        imgItems: [clothingItems4],
+        imgItems: [clothingItems4B],
         sizes: ["S", "M", "L"],
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
@@ -131,7 +133,7 @@ const ShopTheLookSliderData = [
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
-        imgItems: [clothingItems5],
+        imgItems: [clothingItems5B],
         sizes: ["S", "M", "L"],
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
@@ -150,7 +152,7 @@ const ShopTheLookSliderData = [
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
-        imgItems: [clothingItems6],
+        imgItems: [clothingItems6B],
         sizes: ["S", "M", "L"],
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
@@ -169,7 +171,7 @@ const ShopTheLookSliderData = [
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
-        imgItems: [clothingItems7],
+        imgItems: [clothingItems7B],
         sizes: ["S", "M", "L"],
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
@@ -188,7 +190,7 @@ const ShopTheLookSliderData = [
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
-        imgItems: [clothingItems8],
+        imgItems: [clothingItems8B],
         sizes: ["S", "M", "L"],
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
@@ -207,7 +209,7 @@ const ShopTheLookSliderData = [
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
-        imgItems: [clothingItems9],
+        imgItems: [clothingItems9B],
         sizes: ["S", "M", "L"],
         colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
