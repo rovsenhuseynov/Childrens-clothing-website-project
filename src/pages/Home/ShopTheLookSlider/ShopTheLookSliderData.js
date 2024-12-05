@@ -1,7 +1,5 @@
 import image1 from "../../../assets/img/ShopTheLookSlider_img/Image_block_1/Img_block_1_500x700x1.webp";
-
 import image2 from "../../../assets/img/ShopTheLookSlider_img/Image_block_2/Img_block_2_500x700x1.webp";
-
 import image3 from "../../../assets/img/ShopTheLookSlider_img/Image_block_3/Img_block_3_500x700x1.webp";
 import image4 from "../../../assets/img/ShopTheLookSlider_img/Image_block_4/Img_block_4_500x700_1.webp";
 import image5 from "../../../assets/img/ShopTheLookSlider_img/Image_block_5/Img_block_5_500x700x1.webp";
@@ -52,16 +50,14 @@ const ShopTheLookSliderData = [
     id: 1,
     imageUrl: image1,
     title: "Сарочка для мальчиков",
-    size: "M",
     price: "3 499 ₽",
+    size: ["S", "M", "L"], 
     clothingItems: [
       {
         imgItems: [clothingItems1],
-        sizes: ["S", "M", "L"],
       },
       {
         imgItems: [clothingItems1B],
-        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -69,16 +65,14 @@ const ShopTheLookSliderData = [
     id: 2,
     imageUrl: image2,
     title: "Рубашка Классика",
-    size: "L",
+    size: ["S", "M", "L"], 
     price: "2 999 ₽",
     clothingItems: [
       {
         imgItems: [clothingItems2],
-        sizes: ["S", "M", "L"],
       },
       {
         imgItems: [clothingItems2B],
-        sizes: ["S", "M", "L"],
       },
     ],
   },
@@ -86,18 +80,14 @@ const ShopTheLookSliderData = [
     id: 3,
     imageUrl: image3,
     title: "Брюки Повседневные",
-    size: "XL",
+    size: ["S", "M", "L"], // Массив размеров
     price: "4 599 ₽",
     clothingItems: [
       {
         imgItems: [clothingItems3],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
         imgItems: [clothingItems3B],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
     ],
   },
@@ -105,18 +95,14 @@ const ShopTheLookSliderData = [
     id: 4,
     imageUrl: image4,
     title: "Юбка Летняя",
-    size: "S",
+    size: ["S", "M", "L"], // Массив размеров
     price: "2 799 ₽",
     clothingItems: [
       {
         imgItems: [clothingItems4],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
         imgItems: [clothingItems4B],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
     ],
   },
@@ -124,18 +110,14 @@ const ShopTheLookSliderData = [
     id: 5,
     imageUrl: image5,
     title: "Футболка Спорт",
-    size: "M",
+    size: ["S", "M", "L"], // Массив размеров
     price: "1 999 ₽",
     clothingItems: [
       {
         imgItems: [clothingItems5],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
         imgItems: [clothingItems5B],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
     ],
   },
@@ -143,18 +125,14 @@ const ShopTheLookSliderData = [
     id: 6,
     imageUrl: image6,
     title: "Куртка Ветровка",
-    size: "L",
+    size: ["S", "M", "L"], // Массив размеров
     price: "5 499 ₽",
     clothingItems: [
       {
         imgItems: [clothingItems6],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
         imgItems: [clothingItems6B],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
     ],
   },
@@ -162,18 +140,14 @@ const ShopTheLookSliderData = [
     id: 7,
     imageUrl: image7,
     title: "Куртка krasnaya",
-    size: "Lg",
+    size: ["S", "M", "L"], // Массив размеров
     price: "5 49999 ₽",
     clothingItems: [
       {
         imgItems: [clothingItems7],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
         imgItems: [clothingItems7B],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
     ],
   },
@@ -181,18 +155,14 @@ const ShopTheLookSliderData = [
     id: 8,
     imageUrl: image8,
     title: "Uтка krasnaya",
-    size: "Hg",
+    size: ["S", "M", "L"], // Массив размеров
     price: "1 49999 ₽",
     clothingItems: [
       {
         imgItems: [clothingItems8],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
         imgItems: [clothingItems8B],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
     ],
   },
@@ -200,18 +170,14 @@ const ShopTheLookSliderData = [
     id: 9,
     imageUrl: image9,
     title: "Uтка krasnaya",
-    size: "Hg",
+    size: ["S", "M", "L"], // Массив размеров
     price: "1 49999 ₽",
     clothingItems: [
       {
         imgItems: [clothingItems9],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
       {
         imgItems: [clothingItems9B],
-        sizes: ["S", "M", "L"],
-        colors: ["#FF0000", "#00FF00", "#0000FF"],
       },
     ],
   },
